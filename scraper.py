@@ -6,6 +6,7 @@ c=r.content
 
 soup=BeautifulSoup c, "html.parser"
 
+
 all=soup.find_all("div",{"class":"propertyRow"})
 
 all[0].find("h4",{"class":"propPrice"}).text.replace("\n","").replace(" ","")
